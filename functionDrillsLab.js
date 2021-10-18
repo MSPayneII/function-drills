@@ -206,7 +206,7 @@ let loser = "Glimmer";
 //CODE HERE
 function theEliminator(contestants, loser) {
   for (let i = 0; i < contestants.length; i++) {
-    if (contestants[i].includes(loser)) {
+    if (contestants[i] === loser) {
       contestants.splice(i, 1);
     }
   }
@@ -328,10 +328,10 @@ function pond() {
 let globalScope = ["duck"];
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ["rubberDuck"];
+let bathroomScope = ["duck", "rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ["sailorDuck"];
+let bathtubScope = ["duck", "sailorDuck", "rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = ["realDuck"];
+let pondScope = ["duck", "realDuck"];
